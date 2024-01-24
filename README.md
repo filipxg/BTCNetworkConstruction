@@ -13,7 +13,7 @@ Now, to the dynamics, we assume that $B(0) = (V(0), E(0)) = G$ where $G$ is a co
 - A node exists the network.
 These actions are never both performed and the action chosen is based on a probability. In particular, the probability that the exiting action is performed is given by $p: T \rightarrow [0,1]$ with:
 
-$$p(t) = \min\{\dfrac{|V(t)| - 10}{2n}, \dfrac{1}{2}\}.$$
+$$p(t) = \min(\dfrac{|V(t)| - 10}{2n}, \dfrac{1}{2}).$$
 The probability of joining at time $t \in T$ is given by $1 - p(t)$. So, essentially, each timestep a coin flip with the described probabilities is performed to determine the action performed. 
 
 We, now, define the actions in detail. We make the following assumptions on the attachment strategy of a new node, say $v$, at timestep $t + \Delta t \in T$: 
